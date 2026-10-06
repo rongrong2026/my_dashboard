@@ -1,0 +1,933 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>经营数据看板</title>
+    <style>
+        body { font-family: 'Microsoft YaHei', sans-serif; background-color: #f3f4f6; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; color: #1f2937; margin-bottom: 20px; }
+        .cards-grid { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; }
+        .card { background: #fff; border-radius: 8px; padding: 15px; flex: 1; min-width: 150px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-top: 4px solid #3b82f6; text-align: center; }
+        .card-title { font-size: 14px; color: #6b7280; margin-bottom: 5px; }
+        .card-value { font-size: 24px; font-weight: bold; color: #111827; }
+        .card-unit { font-size: 12px; color: #6b7280; margin-left: 4px; }
+        .chart-box { background: #fff; border-radius: 8px; padding: 15px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); overflow: hidden; }
+        .table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .table th, .table td { padding: 10px; text-align: center; border-bottom: 1px solid #e5e7eb; font-size: 14px; }
+        .table th { background-color: #f9fafb; color: #374151; font-weight: bold; }
+        .table td { color: #4b5563; }
+        .section-title { font-size: 18px; font-weight: bold; margin: 20px 0 10px 0; color: #1f2937; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📊 经营数据看板 (2026-09-01 至 2026-09-22)</h1>
+    </div>
+
+    <div class="section-title">一、核心总指标</div>
+    <div class="cards-grid">
+        <div class="card"><div class="card-title">月累计吨位</div><div class="card-value">1315.38<span class="card-unit">吨</span></div></div>
+        <div class="card" style="border-top-color: #ef4444;"><div class="card-title">新开客户</div><div class="card-value">863<span class="card-unit">户</span></div></div>
+        <div class="card" style="border-top-color: #10b981;"><div class="card-title">月活客户</div><div class="card-value">1941<span class="card-unit">户</span></div></div>
+        <div class="card" style="border-top-color: #8b5cf6;"><div class="card-title">首单转化率</div><div class="card-value">30.7<span class="card-unit">%</span></div></div>
+        <div class="card" style="border-top-color: #f59e0b;"><div class="card-title">3日复购率</div><div class="card-value">51.0<span class="card-unit">%</span></div></div>
+    </div>
+
+    <div class="section-title">二、按日趋势</div>
+    <div class="chart-box"><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="26d4c2519ef54e75944cc8783427acb1" class="chart-container" style="width:100%; height:400px; "></div>
+    <script>
+        var chart_26d4c2519ef54e75944cc8783427acb1 = echarts.init(
+            document.getElementById('26d4c2519ef54e75944cc8783427acb1'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_26d4c2519ef54e75944cc8783427acb1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "line",
+            "name": "\u5428\u4f4d",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "stackStrategy": "samesign",
+            "data": [
+                [
+                    "2026-09-01",
+                    0.9879
+                ],
+                [
+                    "2026-09-02",
+                    43.7318
+                ],
+                [
+                    "2026-09-03",
+                    45.3097
+                ],
+                [
+                    "2026-09-04",
+                    46.9688
+                ],
+                [
+                    "2026-09-05",
+                    59.7127
+                ],
+                [
+                    "2026-09-06",
+                    67.0812
+                ],
+                [
+                    "2026-09-07",
+                    58.6299
+                ],
+                [
+                    "2026-09-08",
+                    58.9355
+                ],
+                [
+                    "2026-09-09",
+                    55.9657
+                ],
+                [
+                    "2026-09-10",
+                    55.1222
+                ],
+                [
+                    "2026-09-11",
+                    64.603
+                ],
+                [
+                    "2026-09-12",
+                    78.4464
+                ],
+                [
+                    "2026-09-13",
+                    68.5605
+                ],
+                [
+                    "2026-09-14",
+                    60.0572
+                ],
+                [
+                    "2026-09-15",
+                    59.7751
+                ],
+                [
+                    "2026-09-16",
+                    66.2774
+                ],
+                [
+                    "2026-09-17",
+                    61.8896
+                ],
+                [
+                    "2026-09-18",
+                    64.5331
+                ],
+                [
+                    "2026-09-19",
+                    68.344
+                ],
+                [
+                    "2026-09-20",
+                    85.1407
+                ],
+                [
+                    "2026-09-21",
+                    70.593
+                ],
+                [
+                    "2026-09-22",
+                    74.7157
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": false
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5428\u4f4d"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10,
+            "triggerEvent": false
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            "data": [
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04",
+                "2026-09-05",
+                "2026-09-06",
+                "2026-09-07",
+                "2026-09-08",
+                "2026-09-09",
+                "2026-09-10",
+                "2026-09-11",
+                "2026-09-12",
+                "2026-09-13",
+                "2026-09-14",
+                "2026-09-15",
+                "2026-09-16",
+                "2026-09-17",
+                "2026-09-18",
+                "2026-09-19",
+                "2026-09-20",
+                "2026-09-21",
+                "2026-09-22"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u5428",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "color": [
+        "#f59e0b"
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u6309\u65e5\u5428\u4f4d\u8d70\u52bf",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_26d4c2519ef54e75944cc8783427acb1.setOption(option_26d4c2519ef54e75944cc8783427acb1);
+            window.addEventListener('resize', function(){
+                chart_26d4c2519ef54e75944cc8783427acb1.resize();
+            })
+    </script>
+</body>
+</html>
+</div>
+    <div class="chart-box"><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v6/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="afdba467956445ef9d3105d6dd9079e1" class="chart-container" style="width:100%; height:400px; "></div>
+    <script>
+        var chart_afdba467956445ef9d3105d6dd9079e1 = echarts.init(
+            document.getElementById('afdba467956445ef9d3105d6dd9079e1'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_afdba467956445ef9d3105d6dd9079e1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u65b0\u5f00\u5ba2\u6237",
+            "legendHoverLink": true,
+            "data": [
+                16,
+                13,
+                24,
+                16,
+                47,
+                56,
+                53,
+                34,
+                33,
+                26,
+                35,
+                41,
+                25,
+                23,
+                40,
+                45,
+                38,
+                36,
+                82,
+                92,
+                54,
+                34
+            ],
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "richInheritPlainLabel": true,
+                "valueAnimation": false
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u65b0\u5f00\u5ba2\u6237"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10,
+            "triggerEvent": false
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "displayTransition": true,
+        "textStyle": {
+            "fontSize": 14,
+            "richInheritPlainLabel": true
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            "data": [
+                "2026-09-01",
+                "2026-09-02",
+                "2026-09-03",
+                "2026-09-04",
+                "2026-09-05",
+                "2026-09-06",
+                "2026-09-07",
+                "2026-09-08",
+                "2026-09-09",
+                "2026-09-10",
+                "2026-09-11",
+                "2026-09-12",
+                "2026-09-13",
+                "2026-09-14",
+                "2026-09-15",
+                "2026-09-16",
+                "2026-09-17",
+                "2026-09-18",
+                "2026-09-19",
+                "2026-09-20",
+                "2026-09-21",
+                "2026-09-22"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u6237\u6570",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTruncate": {},
+            "nameMoveOverlap": true,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "silent": false,
+            "triggerEvent": false,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": false
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "color": [
+        "#ef4444"
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u6309\u65e5\u65b0\u5f00\u5ba2\u6237\u8d70\u52bf",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_afdba467956445ef9d3105d6dd9079e1.setOption(option_afdba467956445ef9d3105d6dd9079e1);
+            window.addEventListener('resize', function(){
+                chart_afdba467956445ef9d3105d6dd9079e1.resize();
+            })
+    </script>
+</body>
+</html>
+</div>
+
+    <div class="section-title">三、城市仓明细</div>
+    <div class="table">
+        <table class="dataframe table">
+  <thead>
+    <tr style="text-align: center;">
+      <th>城市仓</th>
+      <th>累计吨位</th>
+      <th>月活客户</th>
+      <th>累计件数</th>
+      <th>日均吨位</th>
+      <th>人均吨位</th>
+      <th>3日复购率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>巴中仓</td>
+      <td>127.0838</td>
+      <td>83</td>
+      <td>7122</td>
+      <td>5.78</td>
+      <td>1.531</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>遂宁仓</td>
+      <td>120.6873</td>
+      <td>83</td>
+      <td>9493</td>
+      <td>5.49</td>
+      <td>1.454</td>
+      <td>73.3%</td>
+    </tr>
+    <tr>
+      <td>开州仓</td>
+      <td>114.7460</td>
+      <td>101</td>
+      <td>7832</td>
+      <td>5.22</td>
+      <td>1.136</td>
+      <td>33.3%</td>
+    </tr>
+    <tr>
+      <td>南充仓</td>
+      <td>94.5913</td>
+      <td>151</td>
+      <td>6355</td>
+      <td>5.26</td>
+      <td>0.626</td>
+      <td>41.9%</td>
+    </tr>
+    <tr>
+      <td>达州仓</td>
+      <td>82.7074</td>
+      <td>114</td>
+      <td>5639</td>
+      <td>3.76</td>
+      <td>0.726</td>
+      <td>40.0%</td>
+    </tr>
+    <tr>
+      <td>彭水仓</td>
+      <td>81.6723</td>
+      <td>46</td>
+      <td>5292</td>
+      <td>3.89</td>
+      <td>1.775</td>
+      <td>50.0%</td>
+    </tr>
+    <tr>
+      <td>广安仓</td>
+      <td>79.8111</td>
+      <td>91</td>
+      <td>4028</td>
+      <td>3.63</td>
+      <td>0.877</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>合川仓</td>
+      <td>59.5449</td>
+      <td>79</td>
+      <td>4081</td>
+      <td>2.71</td>
+      <td>0.754</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>渠县仓</td>
+      <td>55.4966</td>
+      <td>93</td>
+      <td>3367</td>
+      <td>2.64</td>
+      <td>0.597</td>
+      <td>50.0%</td>
+    </tr>
+    <tr>
+      <td>涪陵仓</td>
+      <td>49.0027</td>
+      <td>76</td>
+      <td>3087</td>
+      <td>2.33</td>
+      <td>0.645</td>
+      <td>88.9%</td>
+    </tr>
+    <tr>
+      <td>万州仓</td>
+      <td>43.9491</td>
+      <td>51</td>
+      <td>3004</td>
+      <td>2.00</td>
+      <td>0.862</td>
+      <td>100.0%</td>
+    </tr>
+    <tr>
+      <td>大足仓</td>
+      <td>38.7856</td>
+      <td>28</td>
+      <td>2372</td>
+      <td>1.85</td>
+      <td>1.385</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>忠县仓（废弃）</td>
+      <td>37.1262</td>
+      <td>62</td>
+      <td>2370</td>
+      <td>1.69</td>
+      <td>0.599</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>黔江仓</td>
+      <td>35.4152</td>
+      <td>59</td>
+      <td>2614</td>
+      <td>1.61</td>
+      <td>0.600</td>
+      <td>33.3%</td>
+    </tr>
+    <tr>
+      <td>梁平仓（废弃）</td>
+      <td>33.6537</td>
+      <td>67</td>
+      <td>2142</td>
+      <td>1.68</td>
+      <td>0.502</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>城口仓</td>
+      <td>28.7805</td>
+      <td>56</td>
+      <td>2288</td>
+      <td>1.37</td>
+      <td>0.514</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>云阳仓</td>
+      <td>28.2818</td>
+      <td>49</td>
+      <td>2009</td>
+      <td>1.41</td>
+      <td>0.577</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>仪陇仓</td>
+      <td>26.0002</td>
+      <td>58</td>
+      <td>2032</td>
+      <td>1.63</td>
+      <td>0.448</td>
+      <td>88.0%</td>
+    </tr>
+    <tr>
+      <td>宣汉仓</td>
+      <td>25.6896</td>
+      <td>36</td>
+      <td>2150</td>
+      <td>1.22</td>
+      <td>0.714</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>铜梁仓</td>
+      <td>21.1845</td>
+      <td>7</td>
+      <td>1351</td>
+      <td>1.06</td>
+      <td>3.026</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>大竹仓</td>
+      <td>17.3214</td>
+      <td>47</td>
+      <td>1083</td>
+      <td>0.87</td>
+      <td>0.369</td>
+      <td>28.6%</td>
+    </tr>
+    <tr>
+      <td>奉节仓</td>
+      <td>15.5389</td>
+      <td>58</td>
+      <td>912</td>
+      <td>1.20</td>
+      <td>0.268</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>合江仓</td>
+      <td>15.4729</td>
+      <td>58</td>
+      <td>1172</td>
+      <td>1.93</td>
+      <td>0.267</td>
+      <td>55.0%</td>
+    </tr>
+    <tr>
+      <td>南江仓</td>
+      <td>14.0712</td>
+      <td>32</td>
+      <td>758</td>
+      <td>3.52</td>
+      <td>0.440</td>
+      <td>40.0%</td>
+    </tr>
+    <tr>
+      <td>平昌仓</td>
+      <td>12.9434</td>
+      <td>40</td>
+      <td>832</td>
+      <td>1.08</td>
+      <td>0.324</td>
+      <td>62.5%</td>
+    </tr>
+    <tr>
+      <td>双福自提仓</td>
+      <td>12.6580</td>
+      <td>60</td>
+      <td>415</td>
+      <td>0.70</td>
+      <td>0.211</td>
+      <td>100.0%</td>
+    </tr>
+    <tr>
+      <td>通江仓</td>
+      <td>9.3544</td>
+      <td>25</td>
+      <td>555</td>
+      <td>0.78</td>
+      <td>0.374</td>
+      <td>54.5%</td>
+    </tr>
+    <tr>
+      <td>潼南仓</td>
+      <td>8.4658</td>
+      <td>29</td>
+      <td>562</td>
+      <td>2.12</td>
+      <td>0.292</td>
+      <td>41.7%</td>
+    </tr>
+    <tr>
+      <td>旺苍仓</td>
+      <td>7.0614</td>
+      <td>45</td>
+      <td>461</td>
+      <td>1.77</td>
+      <td>0.157</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>营山仓</td>
+      <td>6.4608</td>
+      <td>31</td>
+      <td>442</td>
+      <td>1.62</td>
+      <td>0.208</td>
+      <td>42.9%</td>
+    </tr>
+    <tr>
+      <td>荣昌仓</td>
+      <td>3.5176</td>
+      <td>32</td>
+      <td>239</td>
+      <td>0.88</td>
+      <td>0.110</td>
+      <td>71.4%</td>
+    </tr>
+    <tr>
+      <td>巫山仓</td>
+      <td>3.0318</td>
+      <td>30</td>
+      <td>206</td>
+      <td>0.51</td>
+      <td>0.101</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>巫溪仓</td>
+      <td>2.9782</td>
+      <td>49</td>
+      <td>211</td>
+      <td>0.99</td>
+      <td>0.061</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>开江仓</td>
+      <td>2.2619</td>
+      <td>18</td>
+      <td>153</td>
+      <td>0.32</td>
+      <td>0.126</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>广安岳池仓</td>
+      <td>0.0185</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.02</td>
+      <td>0.018</td>
+      <td>50.0%</td>
+    </tr>
+    <tr>
+      <td>万源配送仓</td>
+      <td>0.0151</td>
+      <td>1</td>
+      <td>8</td>
+      <td>0.02</td>
+      <td>0.015</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+</body>
+</html>
